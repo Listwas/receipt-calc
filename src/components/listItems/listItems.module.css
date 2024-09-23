@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: red;
+}

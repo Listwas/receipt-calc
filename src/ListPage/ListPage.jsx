@@ -6,7 +6,7 @@ import ListItems from '../components/listItems/listItems';
 const ListPage = () => {
     const [searchQuery, setSearchQuery] = useState('');
 
-    const items = ['apple', 'bannanan', 'something', 'prod']
+    const items = ['apple', 'bannanan', 'something', 'prod', 'apple', 'bannanan', 'something', 'prod']
 
     const filteredItems = items.filter(item =>
         item.toLowerCase().includes(searchQuery.toLowerCase())

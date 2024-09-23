@@ -20,7 +20,6 @@
 }
 
 .right {
-    display: inherit;
 }
 
 .left, .right {
@@ -28,11 +27,24 @@
 }
 
 .searchBar {
-    height: 5vh;
+    height: auto;
     border-bottom: 3px solid #000;
 }
 
-.products {
-    height: 100%;
+
+@media (max-width: 800px) {
+    .listContener{
+        width: 80vw;
+        height: 85vh;
+    }
 }
 
+@media (max-width: 500px) {
+    .listContener{
+        width: 95vw;
+        height: 90vh;
+    }
+    .left{
+        width: 50vw;
+    }
+}

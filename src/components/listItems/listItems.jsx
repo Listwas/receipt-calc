@@ -1,4 +1,4 @@
-// import s from './listItems.module.css'
+import './listItems.module.css'
 import PropTypes from 'prop-types'
 
 const ListItems = ({items}) => {

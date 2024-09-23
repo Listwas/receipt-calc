@@ -6,12 +6,13 @@
 }
 
 .searchBar input {
-    width: 100%;
     position: relative;
+    width: 30vw;
     left: 10px;
-    padding: 5px;
+    padding: 7px;
     border-radius: 9px;
     border: 2px solid #000;
+    margin-bottom: 10px;
 }
 
 .searchBar input:focus {
@@ -23,5 +24,37 @@
     width: 27px;
     height: 27px;
     position: relative;
+    top: 4px;
     right: 20px;
+}
+
+@media (max-width: 800px) {
+    .searchBar input {
+        width: 25vw;
+        padding: 4px;
+        height: 3vh;
+    }
+    .icon {
+        width: 25px;
+        height: 25px;
+        top: 4px;
+    }
+}
+
+@media (max-width: 500px) {
+    .searchBar input {
+        width: 50vw;
+    }
+    .icon {
+        top: 3px
+    }
+}
+
+@media (max-width: 400px) {
+    .searchBar input {
+        width: 40vw;
+    }
+    .icon {
+        top: 4px
+    }
 }
