@@ -1,13 +1,13 @@
 import './listItems.module.css'
 import PropTypes from 'prop-types'
 
-const ListItems = ({items}) => {
+const ListItems = ({items, onItemClick}) => {
    
     return (
         <div>
             <ul>
                 {items.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li key={index} onClick={() => onItemClick(item)}>{item}</li>
                 ))}
             </ul>
         </div>
@@ -15,7 +15,8 @@ const ListItems = ({items}) => {
 }
 
 ListItems.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.string).isRequired
+    items: PropTypes.arrayOf(PropTypes.string).isRequired,
+    onItemClick: PropTypes.func.isRequired
 }
 
 export default ListItems;

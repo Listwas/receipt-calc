@@ -1,0 +1,9 @@
+.listing {
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.listing li {
+    min-width: 8vw;
+    background-color: blue;
+}
