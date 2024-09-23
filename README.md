@@ -1,1 +1,1 @@
-simple recepit calculator
+simple receipt calculator
