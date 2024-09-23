@@ -6,20 +6,32 @@ import ListItems from '../components/listItems/listItems';
 const ListPage = () => {
     const [searchQuery, setSearchQuery] = useState('');
 
-    const items = ['apple', 'bannanan', 'something', 'prod', 'apple', 'bannanan', 'something', 'prod']
+    const [items, setItems] = useState(['apple', 'bannanan', 'something', 'prod', 'apple', 'bannanan', 'something', 'prod'])
 
     const filteredItems = items.filter(item =>
-        item.toLowerCase().includes(searchQuery.toLowerCase())
+      item.toLowerCase().includes(searchQuery.toLowerCase())
     );
+
+    const addProduct = () => {
+      setItems([...items, searchQuery])
+      setSearchQuery('')
+    };
 
     return (
       <>
         <main className={s.center}>
             <div className={s.listContener}>
                 <div className={s.left}>
-                    <nav className={s.searchBar}> <SearchBar onSearch={setSearchQuery}/> </nav>
-                    <div className={s.products}> <ListItems items={filteredItems}/> </div>
-                </div>
+                    <nav className={s.searchBar}> <SearchBar query={searchQuery} onSearch={setSearchQuery}/> </nav>
+                    <div className={s.products}> </div>
+
+                    {filteredItems. length === 0 ? (
+                      <div className={s.nothingFound}> 
+                        <p>no items found!</p>
+                        <button onClick={addProduct}>add this item</button>
+                      </div> ) : (<ListItems items={filteredItems}/>)
+                    }
+                  </div>
                 <div className={s.right}>list</div>
 
             </div>

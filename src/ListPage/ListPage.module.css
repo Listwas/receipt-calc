@@ -28,6 +28,19 @@
     border-bottom: 3px solid #000;
 }
 
+.nothingFound {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.nothingFound button {
+    padding: 8px;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #6e6e6e;
+}
 
 @media (max-width: 800px) {
     .listContener{

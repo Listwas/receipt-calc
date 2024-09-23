@@ -1,14 +1,10 @@
 import s from './searchBar.module.css'
-import {useState} from "react";
 import PropTypes from 'prop-types'
 import { CiSearch } from "react-icons/ci";
 
-const SearchBar = ({onSearch}) => {
+const SearchBar = ({query, onSearch}) => {
     
-    const [query, setQuery] = useState('');
-
     const handleChange = (e) => {
-        setQuery(e.target.value);
         onSearch(e.target.value);
     }
     
@@ -29,6 +25,7 @@ const SearchBar = ({onSearch}) => {
 }
 
 SearchBar.propTypes = {
+    query: PropTypes.string.isRequired,
     onSearch: PropTypes.func.isRequired
 }
 
