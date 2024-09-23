@@ -1,14 +1,18 @@
 ul {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     padding: 0;
     list-style: none;
+    margin-left: 2px;
 }
 
 li {
-    width: 80px;
-    height: 80px;
-    margin-right: 5px;
-    margin-left: 5px;
+    max-width: 15vw;
+    height: 8vh;
+    display: inherit;
+    align-items: center;
+    padding: 5px;
+    margin: 2px; 
     background-color: red;
 }
