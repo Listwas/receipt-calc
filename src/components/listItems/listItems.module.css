@@ -5,6 +5,7 @@ ul {
     padding: 0;
     list-style: none;
     margin-left: 2px;
+    user-select: none;
 }
 
 li {
