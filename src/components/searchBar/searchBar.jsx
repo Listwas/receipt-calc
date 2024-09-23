@@ -1,6 +1,7 @@
-// import s from './searchBar.module.css'
+import s from './searchBar.module.css'
 import {useState} from "react";
 import PropTypes from 'prop-types'
+import { CiSearch } from "react-icons/ci";
 
 const SearchBar = ({onSearch}) => {
     
@@ -13,12 +14,16 @@ const SearchBar = ({onSearch}) => {
     
     return (
         <>
-            <input
+            <div className={s.searchBar}>
+
+            <input 
                 type="text"
                 placeholder="search..."
                 value={query}
                 onChange={handleChange}
             />
+            <CiSearch className={s.icon}/>
+            </div>
         </>
         )    
 }
