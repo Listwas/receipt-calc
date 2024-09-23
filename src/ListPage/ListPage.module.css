@@ -1,0 +1,38 @@
+.center {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listContener {
+    display: inherit;
+    width: 55vw;
+    height: 60vh;
+}
+
+.left {
+    display: inherit;
+    flex-flow: column nowrap;
+}
+
+.right {
+    display: inherit;
+    background-color: blue;
+}
+
+.left, .right {
+    width: 30vw;
+}
+
+.searchBar {
+    background-color: purple;
+    height: 5vh;
+}
+
+.products {
+    background-color: pink;
+    height: 100%;
+}
+
