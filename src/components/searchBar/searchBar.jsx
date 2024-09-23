@@ -10,6 +10,7 @@ const SearchBar = ({onSearch}) => {
         setQuery(e.target.value);
         onSearch(e.target.value);
     }
+    
     return (
         <>
             <input
@@ -23,7 +24,7 @@ const SearchBar = ({onSearch}) => {
 }
 
 SearchBar.propTypes = {
-    onSearch: PropTypes.string
+    onSearch: PropTypes.func.isRequired
 }
 
 export default SearchBar;

@@ -15,7 +15,7 @@ const ListItems = ({items}) => {
 }
 
 ListItems.propTypes = {
-    items: PropTypes.string
+    items: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default ListItems;
