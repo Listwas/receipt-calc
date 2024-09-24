@@ -19,10 +19,10 @@ const ListPage = () => {
     };
 
 
-    const [selectedItems, setSelectedItems] = useState([]);
+    const [selectedItem, setSelectedItem] = useState([]);
 
     const handleItemClick = (item) => {
-      setSelectedItems([...selectedItems, item]);
+      setSelectedItem([...selectedItem, item]);
     }
 
     return (
@@ -42,7 +42,7 @@ const ListPage = () => {
                   </div>
                 <div className={s.right}>
                   <p>list:</p>
-                  <SelectedItems items={selectedItems}/>
+                  <SelectedItems items={selectedItem}/>
                 </div>
 
             </div>

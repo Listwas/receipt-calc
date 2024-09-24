@@ -5,5 +5,15 @@
 
 .listing li {
     min-width: 8vw;
+    font-size: 1em;
+    padding: 1;
+    margin-left: 0;
+    margin-right: 2px;
     background-color: blue;
+}
+
+@media (max-width: 500px) {
+    .listing li {
+        font-size: 0.7rem;
+    }
 }
