@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './selectedItems.module.css'
+
 const SelectedItems = ({ items }) => {
   return (
     <div>
