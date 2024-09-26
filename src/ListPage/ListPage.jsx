@@ -7,7 +7,7 @@ import SelectedItems from '../components/selectedItems/selectedItems';
 const ListPage = () => {
     const [searchQuery, setSearchQuery] = useState('');
 
-    const [items, setItems] = useState(['apple', 'bannanan', 'something', 'prod', 'apple', 'bannanan', 'something', 'prod'])
+    const [items, setItems] = useState(['apple', 'bannanan', 'something', 'prod', 'apple', 'bannanan', 'something', 'prod','apple', 'bannanan', 'something', 'prod', 'apple', 'bannanan', 'something', 'prod'])
     
     const filteredItems = items.filter(item =>
       item.toLowerCase().includes(searchQuery.toLowerCase())
